@@ -1,31 +1,22 @@
-const path = require("path");
+const paths = require("./paths");
 
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
-function buildPath(folder = "dist") {
-  const currentPathFolders = __dirname.split("/");
-  const root = currentPathFolders
-    .slice(0, currentPathFolders.length - 1)
-    .join("/");
-
-  return path.resolve(root, folder);
-}
-
 module.exports = {
   entry: {
-    index: "/src/index.js",
+    index: paths.src + "/index.js",
   },
   output: {
     filename: "bundle.js",
-    path: buildPath(),
+    path: paths.build,
     clean: true,
     assetModuleFilename: "assets/[hash][ext]",
   },
   plugins: [
     new HtmlWebpackPlugin({
       filename: "index.html",
-      template: "/src/index.html",
+      template: paths.src + "/index.html",
     }),
     new MiniCssExtractPlugin({
       filename: "style.css",
