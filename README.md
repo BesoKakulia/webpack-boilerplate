@@ -1,6 +1,6 @@
-# webpack-boilerplate
+# Webpack Boilerplate
 
-Basic Webpack 5 sass, bable boilerplate.
+Simple Webpack 5 Sass, Bable boilerplate.
 
 ## Usage
 
