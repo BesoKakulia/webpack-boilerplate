@@ -12,4 +12,4 @@ Simple Webpack 5 Sass, Bable boilerplate.
 
 `npm run build`
 
-You can serve production build using `npm run serve` command, the application will be served on `localhost:3000`
+You can serve production build using `npm run server` command, the application will be served on `localhost:3000`
