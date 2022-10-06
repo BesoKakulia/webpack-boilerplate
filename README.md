@@ -4,13 +4,9 @@ Simple Webpack 5 Sass, Bable boilerplate.
 
 ## Usage
 
-<br>
-
 ### Start development Server
 
 `npm start`
-
-<br>
 
 ### Production build
 
